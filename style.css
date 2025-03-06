@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+.main1{
+    width: 50%;
+    height: 80vh;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 20px 20px 20px;
+    /* display: none; */
+}
+.heading{
+    height: 40px;
+    width: 100%;
+    background-color: navy;
+    position: absolute;
+    top:0;
+    color: white;
+    text-align: center;
+    padding: 3px;
+}
+
+.first-block, .second-block{
+    position: relative;
+    border: 2px solid black;
+    width: 80%;
+    height: 35%;
+}
+.first-block h3, .second-block h3{
+    background-color: navy;
+    color: white;
+}
+.label{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    
+}
+.input input, .input select{
+    width: 90%;
+    height: 40px;
+    border: 2px solid black;
+    top: 50%;
+    position: absolute;
+    left: 5%;
+    padding: 5px;
+}
+.input input{
+    padding: 10px;
+}
+.result{
+    height: 40px;
+    border: 2px solid black;
+    width: 80%;
+    text-align: center;
+    border: 2px solid navy;
+}
+.result::placeholder{
+    color: navy;
+}
+
+.main2{
+    width: 50%;
+    height: 80vh;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 20px 20px 20px;
+    /* display: none; */
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main3{
+    width: 50%;
+    height: 80vh;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 20px 20px 20px;
+    /* display: none; */
+}
+textarea{
+    resize: none;
+    height: 30%;
+    width: 80%;
+    border: 2px solid navy;
+    padding: 10px;
+}
+.btnn{
+    all: unset;
+    background-color: blue;
+    width: 40%;
+    height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    box-shadow: 2px 2px black;
+    border-radius: 5px;
+}
+.btnn:hover{
+    background-color: rgb(36, 36, 156);
+}
+.btnn:active{
+    box-shadow: 0px 0px black;
+}
+
+.nav li button{
+    all: unset;
+    padding: 5px;
+    background-color: azure;
+    box-shadow: 2px 2px rgba(240, 255, 255, 0.56);
+    border-radius: 5px;
+}
+.nav li button:active{
+    box-shadow: 0px 0px azure;
+}
+.nav li button:hover{
+    background-color: wheat;
+}
+.navbar{
+    position: relative;
+    z-index: 999;
+}
+.navbar-toggler-icon{
+    color: white;
+}
+@media(max-width:768px){
+    .main1{
+        width: 80%;
+        height: 80vh;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 50px 20px 20px 20px;
+        /* display: none; */
+    }
+}
+@media(max-width:500px){
+    html,body{
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+    .main1{
+        width: 100%;
+        height: 80dvh;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 50px 20px 20px 20px;
+        /* display: none; */
+    }
+    .first-block, .second-block{
+        width: 95%;
+    }
+    textarea{
+        width: 95%;
+    }
+    .result{
+        width: 95%;
+    }
+}

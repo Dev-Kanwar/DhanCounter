@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhan Counter</title>
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />   
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .loader{
+            width: 100%;
+            height: 100dvh;
+        }
+        .loader img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <img src="https://www.bing.com/th/id/OGC.1e42c3551703fa1a952851b56286dd01?pid=1.7&rurl=https%3a%2f%2fcdn.pixabay.com%2fanimation%2f2022%2f11%2f24%2f06%2f06%2f06-06-54-39_512.gif&ehk=WxN5IKY3uQCcCxI9xNsj9Fu8z3u3OcUszPineGhYPuk%3d">
+      </div>
+      <script>
+        setTimeout(function(){
+            window.location.href="notescounter.html";
+        },2500)
+        document.addEventListener("contextmenu",(e)=>{
+            e.preventDefault();
+        })
+    </script>
+</body>
+</html>
